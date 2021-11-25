@@ -1,0 +1,17 @@
+.loader {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    animation: loader 1.3s linear infinite;
+
+    border: 5px solid $table-rows-color;
+    border-left-color: $bg-thead-color;
+
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,43 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: transparent;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 30px;
+  min-height: 32px;
+  color: $text-white-color;
+  background-color: $accent-blue-color;
+  box-shadow: 6px 7px 30px 6px $box-shadow-color;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet) {
+    min-height: 40px;
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &--delite {
+    min-height: 20px;
+    padding: 0 6px;
+    border-radius: 3px;
+    border: 8px solid $accent-blue-color;
+    background-color: inherit;
+
+     @media screen and (min-width: $tablet) {
+     padding: 0 10px;
+     }
+  }
+}

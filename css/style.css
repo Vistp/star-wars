@@ -1,0 +1,220 @@
+body {
+  background-color: #2d3036;
+  color: #3f3f3f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 200px;
+  padding: 30px;
+  background-color: #f7f1e9;
+  border-radius: 5px;
+}
+
+.notification__text {
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .notification__text {
+    font-size: 30px;
+  }
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: transparent;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 30px;
+  min-height: 32px;
+  color: #ffffff;
+  background-color: #61dafb;
+  -webkit-box-shadow: 6px 7px 30px 6px rgba(97, 218, 251, 0.3);
+          box-shadow: 6px 7px 30px 6px rgba(97, 218, 251, 0.3);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+  text-align: center;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    min-height: 40px;
+    font-size: 16px;
+  }
+}
+
+.button:hover, .button:focus {
+  opacity: 0.7;
+}
+
+.button--delite {
+  min-height: 20px;
+  padding: 0 6px;
+  border-radius: 3px;
+  border: 8px solid #61dafb;
+  background-color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .button--delite {
+    padding: 0 10px;
+  }
+}
+
+.wrapper {
+  max-height: 200px;
+  overflow: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.table {
+  position: relative;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #faebd7;
+  z-index: 10;
+}
+
+th,
+td {
+  padding: 4px;
+  border: 1px solid rgba(247, 241, 233, 0.5);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  th,
+  td {
+    padding: 10px;
+  }
+}
+
+td {
+  color: rgba(247, 241, 233, 0.5);
+}
+
+.loader {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-animation: loader 1.3s linear infinite;
+          animation: loader 1.3s linear infinite;
+  border: 5px solid rgba(247, 241, 233, 0.5);
+  border-left-color: #faebd7;
+}
+
+@-webkit-keyframes loader {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

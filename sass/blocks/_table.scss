@@ -1,0 +1,38 @@
+.wrapper {
+    max-height: 200px;
+    overflow: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table {
+    position: relative;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: $bg-thead-color;
+    z-index: 10;
+}
+
+th,
+td {
+    padding: 4px;
+    border: 1px solid $table-rows-color;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        padding: 8px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 10px;
+    }
+}
+
+td {
+    color: $table-rows-color;
+}

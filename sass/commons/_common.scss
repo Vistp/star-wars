@@ -1,0 +1,17 @@
+body {
+  background-color: $bg-main-color;
+  color: $text-main-color;
+  font-family: $main-font;
+  font-size: 12px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: $main-font-size;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
